@@ -33,7 +33,26 @@ public class Main {
             System.out.println(setEle);
         }
 
-        /**/
+        /*
+        Output:
+        ..........................
+        Set1: [2, 4, 6, 8, 9, 11]
+        Set2: [1, 2, 3, 7, 9, 11]
+        ..........................
+        union : [1, 2, 3, 4, 6, 7, 8, 9, 11]
+        ..........................
+        intersection: [1, 2, 3, 7, 9, 11]
+        ..........................
+        difference: []
+        ..........................
+        Set2 elements are:
+        1
+        2
+        3
+        7
+        9
+        11
+        */
 
         //2. EnumSet
         Set<JOBPROFILE> degreeJobs = EnumSet.of(JOBPROFILE.ENGINEER, JOBPROFILE.DOCTOR, JOBPROFILE.TEACHER, JOBPROFILE.TECHNICIAN);
@@ -42,5 +61,13 @@ public class Main {
         System.out.println("Non-Degree Jobs: "+ nonDegreeJobs);
         degreeJobs.retainAll(nonDegreeJobs);
         System.out.println("CommonJobs: "+ degreeJobs);
+
+        /*
+        Output:
+        ..........................
+        Degree Jobs: [DOCTOR, ENGINEER, TEACHER, TECHNICIAN]
+        Non-Degree Jobs: [PAINTER, CLERK, TECHNICIAN]
+        CommonJobs: [TECHNICIAN]
+        */
     }
 }
