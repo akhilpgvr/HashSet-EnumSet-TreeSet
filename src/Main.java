@@ -1,6 +1,7 @@
 import java.util.EnumSet;
 import java.util.HashSet;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Main {
 
@@ -68,6 +69,21 @@ public class Main {
         Degree Jobs: [DOCTOR, ENGINEER, TEACHER, TECHNICIAN]
         Non-Degree Jobs: [PAINTER, CLERK, TECHNICIAN]
         CommonJobs: [TECHNICIAN]
+        */
+
+        //TreeSet -- operations are same but it saves element in an ascending order
+        System.out.println("..........................");
+        Set<Integer> treeSet = new TreeSet<>();
+        treeSet.add(5);
+        treeSet.add(2);
+        treeSet.add(10);
+        treeSet.add(29);
+        System.out.println(treeSet);
+
+        /*
+        Output:
+        ..........................
+        [2, 5, 10, 29]
         */
     }
 }
